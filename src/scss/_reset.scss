@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:300,400,500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
+
+  @media(min-width: 1025px) {
+    font-size: 24px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+//variables ===============================================
+$primary-color: rgb(1, 129, 61);
+$secondary-color: rgb(158, 55, 14);
+$black-color: rgb(0, 0, 0);
+$white-color: rgb(255, 255, 255);
+$gray-color: rgb(163, 163, 163);
+
+//utilities =================================================
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $primary-color;
+    transition: .2s;
+
+    &:hover {
+      background-color: lighten($color: $primary-color, $amount: 5%);
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+    transition: .2s;
+
+    &:hover {
+      background-color: lighten($color: $secondary-color, $amount: 5%);
+    }
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.header {
+  color: $gray-color;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $gray-color;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+
+  &--small {
+    font-size: 1.2rem;
+  }
+
+  &--large {
+    font-size: 2rem;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+  color: $gray-color;
+  border: 1px solid $gray-color;
+  border-radius: 5px;
+}
+
+//margins
+.m-1 {
+  margin: .5rem;
+}
+
+.m-2 {
+  margin: 1rem;
+}
+
+.m-3 {
+  margin: 1.5rem;
+}
+
+.my-1 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+//paddings
+.p-1 {
+  padding: .5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.py-1 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.py-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
