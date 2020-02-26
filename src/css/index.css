@@ -31,6 +31,15 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -149,5 +158,80 @@ a {
 .py-3 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+@media (min-width: 1025px) {
+  #header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#logo .logo__header {
+  color: #a3a3a3;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1025px) {
+  #logo .logo__header {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+}
+
+#navigation .nav__item {
+  display: inline-block;
+}
+
+#navigation .nav__link {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #a3a3a3;
+}
+
+@media (min-width: 1025px) {
+  #navigation .nav__link {
+    font-size: 1rem;
+  }
+}
+
+#navigation .active {
+  font-weight: 500;
+  color: #8a8a8a;
 }
 /*# sourceMappingURL=index.css.map */
