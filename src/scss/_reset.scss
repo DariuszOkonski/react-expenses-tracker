@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Spartan:300,400,500&display=swap');
 
+//variables ===============================================
+$primary-color: rgb(1, 129, 61);
+$secondary-color: rgb(158, 55, 14);
+$black-color: rgb(0, 0, 0);
+$white-color: rgb(255, 255, 255);
+$gray-color: rgb(163, 163, 163);
+
+$desktop: 1024px;
+
 *,
 *::before,
 *::after {
@@ -15,7 +24,7 @@ body {
   min-height: 100vh;
   padding: 0.5rem;
 
-  @media(min-width: 1025px) {
+  @media(min-width: $desktop) {
     font-size: 24px;
   }
 }
@@ -30,14 +39,6 @@ a {
   text-decoration: none;
 }
 
-//variables ===============================================
-$primary-color: rgb(1, 129, 61);
-$secondary-color: rgb(158, 55, 14);
-$black-color: rgb(0, 0, 0);
-$white-color: rgb(255, 255, 255);
-$gray-color: rgb(163, 163, 163);
-
-$desktop: 1025px;
 //utilities =================================================
 
 .container {
