@@ -1,0 +1,51 @@
+#history-item {
+  display: grid;
+  grid-template-columns: 30px 3fr 2fr 10px;
+
+  border: 1px solid lighten($color: $gray-color, $amount: 20%);
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+
+  font-size: 0.8rem;
+
+  @media(min-width: $desktop) {
+    grid-template-columns: 30px 3fr 1fr 10px;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+
+  }
+
+  .item-paragraph {
+    background-color: lighten($color: $gray-color, $amount: 30%);
+    display: flex;
+    padding-left: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .btn {
+    visibility: visible;
+    width: 25px;
+    height: 25px;
+    padding: 0.2rem;
+    text-align: center;
+
+    @media(min-width: $desktop) {
+      visibility: hidden;
+    }
+  }
+
+  &:hover>.btn {
+    visibility: visible;
+  }
+
+  .red {
+    background-color: $secondary-color;
+  }
+
+  .green {
+    background-color: $primary-color;
+  }
+}
