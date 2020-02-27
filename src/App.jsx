@@ -8,6 +8,9 @@ function App() {
       <div id="app">
         <Header />
 
+        <div className="container">
+          Container
+        </div>
 
       </div>
     </BrowserRouter>
