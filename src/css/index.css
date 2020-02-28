@@ -323,7 +323,15 @@ a {
   background-color: #9e370e;
 }
 
+#history-item .red-text {
+  color: #9e370e;
+}
+
 #history-item .green {
   background-color: #01813d;
+}
+
+#history-item .green-text {
+  color: #01813d;
 }
 /*# sourceMappingURL=index.css.map */
