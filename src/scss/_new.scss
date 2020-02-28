@@ -1,5 +1,32 @@
-#new {}
+#new {
+  .costs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    .paragraph {
+      text-align: center;
+    }
+  }
+}
 
 #balance {
   border-bottom: 1px solid $gray-color;
+}
+
+#income,
+#expense {
+  border: 1px solid lighten($color: $gray-color, $amount: 25%);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+#income {
+  margin-right: 0.5rem;
+}
+
+#expense {
+  margin-left: 0.5rem;
 }

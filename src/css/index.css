@@ -136,6 +136,16 @@ a {
   border-radius: 5px;
 }
 
+.green-text {
+  color: #01813d;
+  font-weight: bold;
+}
+
+.red-text {
+  color: #9e370e;
+  font-weight: bold;
+}
+
 .m-1 {
   margin: .5rem;
 }
@@ -323,19 +333,44 @@ a {
   background-color: #9e370e;
 }
 
-#history-item .red-text {
-  color: #9e370e;
-}
-
 #history-item .green {
   background-color: #01813d;
 }
 
-#history-item .green-text {
-  color: #01813d;
+#new .costs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#new .costs .paragraph {
+  text-align: center;
 }
 
 #balance {
   border-bottom: 1px solid #a3a3a3;
+}
+
+#income,
+#expense {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+#income {
+  margin-right: 0.5rem;
+}
+
+#expense {
+  margin-left: 0.5rem;
 }
 /*# sourceMappingURL=index.css.map */
