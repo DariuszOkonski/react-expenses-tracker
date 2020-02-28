@@ -1,16 +1,17 @@
 import React from 'react';
 import HistoryItem from './HistoryItem';
+import { useContext } from 'react';
+import { BudgetContext } from '../contexts/BudgetContext';
 
 const HistoryItems = () => {
-  const empty = true;
+  const { budget } = useContext(BudgetContext);
 
   return (
     <div id="history-items">
-      <HistoryItem />
-      <HistoryItem />
-      <HistoryItem />
-      <HistoryItem />
-      <HistoryItem />
+      {
+        budget.map(element =>
+          <HistoryItem key={element.id} {...element} />)
+      }
     </div>
   );
 }
