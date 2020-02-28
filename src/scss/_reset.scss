@@ -141,6 +141,16 @@ a {
   border-radius: 5px;
 }
 
+.green-text {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.red-text {
+  color: $secondary-color;
+  font-weight: bold;
+}
+
 //margins
 .m-1 {
   margin: .5rem;
