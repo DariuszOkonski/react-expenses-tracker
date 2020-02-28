@@ -334,4 +334,8 @@ a {
 #history-item .green-text {
   color: #01813d;
 }
+
+#balance {
+  border-bottom: 1px solid #a3a3a3;
+}
 /*# sourceMappingURL=index.css.map */
