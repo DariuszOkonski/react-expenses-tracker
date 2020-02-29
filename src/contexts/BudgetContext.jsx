@@ -7,15 +7,9 @@ export const BudgetContext = createContext();
 const BudgetContextProvider = (props) => {
   const [budget, setBudget] = useState([]);
 
-  // useEffect(() => {
-  //   localStorage.setItem('budget', JSON.stringify(budget));
-  //   console.log('useEffect1');
-  // }, [budget]);
-
   useEffect(() => {
     let localData = localStorage.getItem('budget');
     localData = localData === null ? [] : JSON.parse(localData);
-    // console.log(localData);
     setBudget(localData);
   }, [])
 
