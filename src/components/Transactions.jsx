@@ -47,8 +47,6 @@ const Transactions = () => {
         />
 
         <div className="buttons-section">
-          {/* <button type="submit" className="btn btn--primary">Add Income</button>
-          <button onClick={handleExpense} className="btn btn--secondary">Add Expense</button> */}
           <button type="submit" className="btn btn--secondary">Add Expense</button>
           <button onClick={handleIncome} className="btn btn--primary">Add Income</button>
         </div>
