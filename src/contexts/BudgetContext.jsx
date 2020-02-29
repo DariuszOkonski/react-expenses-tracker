@@ -27,7 +27,9 @@ const BudgetContextProvider = (props) => {
   }
 
   return (
-    <BudgetContext.Provider value={{ budget, displayBudget, displayIncome, displayExpenses }}>
+    <BudgetContext.Provider
+      value={{ budget, displayBudget, displayIncome, displayExpenses }
+      }>
       {props.children}
     </BudgetContext.Provider>
   );
