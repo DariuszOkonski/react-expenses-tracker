@@ -1,9 +1,17 @@
 import React from 'react';
+import { useContext } from 'react';
+import { BudgetContext } from '../contexts/BudgetContext';
 
 const HistoryItem = ({ id, text, income, expense }) => {
+  const { removeItem } = useContext(BudgetContext);
+
   return (
     <div id="history-item">
-      <button className="btn btn--secondary">x</button>
+      <button
+        className="btn btn--secondary"
+        onClick={() => removeItem(id)}
+      >x</button>
+
       <p className="item-paragraph">{text}</p>
       <p className="item-paragraph">
         {
